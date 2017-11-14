@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ScrollingViewController.swift
 //  Pop
 //
 //  Created by Rob Crabtree on 11/13/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: BaseViewController {
+class ScrollingViewController: BaseViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var textField: UITextField!
@@ -43,7 +43,7 @@ class ViewController: BaseViewController {
     }
 }
 
-extension ViewController: UITextFieldDelegate {
+extension ScrollingViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         view.endEditing(true)
         return true
