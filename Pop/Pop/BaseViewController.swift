@@ -21,8 +21,10 @@ class BaseViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
+        // Track view controller usage with analytics tracker
         AnalyticsTracker.shared.track(String(describing: type(of: self)), message: "Appeared")
 
+        // Register for keyboard show and hide notifications
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardMoved(_:)), name: .UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardMoved(_:)), name: .UIKeyboardWillHide, object: nil)
     }
@@ -57,14 +59,13 @@ class BaseViewController: UIViewController {
         let animationCurveRaw = animationCurveRawNSN?.uintValue ?? UIViewAnimationOptions.curveEaseInOut.rawValue
         let animationCurve:UIViewAnimationOptions = UIViewAnimationOptions(rawValue: animationCurveRaw)
 
-        // Adjust the size of the constraint to match the keyboard height
+        // Move the view's edge along with the keyboard
         if endFrame.origin.y >= UIScreen.main.bounds.size.height {
             constraint.constant = 0.0
         } else {
             constraint.constant = keyboardHeight
         }
 
-        // Animate the resize so that it's in sync with the appearance of the keyboard.
         UIView.animate(withDuration: duration, delay: TimeInterval(0), options: animationCurve, animations: {
             self.view.layoutIfNeeded()
         }, completion: nil)

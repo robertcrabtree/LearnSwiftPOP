@@ -28,6 +28,8 @@ class ScrollingViewController: BaseViewController {
     @IBAction func sayIt(_ sender: UIButton) {
         guard let text = textField.text, text.count > 0 else { return }
         view.endEditing(true)
+        
+        // Using base class ok alert
         showOkAlert(title: "You said", message: text, completion: nil)
     }
 

@@ -8,10 +8,12 @@
 
 import UIKit
 
+// Trackable protocol
 protocol Trackable {
     func track(_ tag: String, message: String?)
 }
 
+// Trackable extension
 extension Trackable {
     func track(_ tag: String, message: String?) {
         if let message = message {
@@ -22,9 +24,11 @@ extension Trackable {
     }
 }
 
+// Concrete type conforming to Trackable
 struct PrintingAnalyticsTracker: Trackable { }
 
-struct AnalyticsTracker: Trackable {
+// Analytics tracker singleton / factory
+struct AnalyticsTracker {
     static let shared: Trackable = PrintingAnalyticsTracker()
     private init() { }
 }
