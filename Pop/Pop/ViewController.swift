@@ -8,9 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var textField: UITextField!
 
     lazy var tapGestureRecognizer: UITapGestureRecognizer = {
         let tapper = UITapGestureRecognizer()
@@ -18,10 +19,16 @@ class ViewController: UIViewController {
         return tapper
     }()
 
+    @IBAction func sayIt(_ sender: UIButton) {
+        guard let text = textField.text, text.count > 0 else { return }
+        showOkAlert(title: "You said", message: text, completion: nil)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         scrollView.addGestureRecognizer(tapGestureRecognizer)
+        textField.delegate = self
     }
     
     @objc func viewTapped(sender: UITapGestureRecognizer) {
@@ -29,3 +36,9 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        view.endEditing(true)
+        return true
+    }
+}
