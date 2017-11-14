@@ -22,7 +22,9 @@ extension Trackable {
     }
 }
 
+struct PrintingAnalyticsTracker: Trackable { }
+
 struct AnalyticsTracker: Trackable {
-    static let shared: AnalyticsTracker = AnalyticsTracker()
+    static let shared: Trackable = PrintingAnalyticsTracker()
     private init() { }
 }
