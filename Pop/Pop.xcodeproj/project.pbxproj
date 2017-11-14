@@ -13,6 +13,7 @@
 		D435DF8F1FBA6A7000569C2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D435DF8E1FBA6A7000569C2B /* Assets.xcassets */; };
 		D435DF921FBA6A7000569C2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D435DF901FBA6A7000569C2B /* LaunchScreen.storyboard */; };
 		D435DF9A1FBA6FE200569C2B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D435DF991FBA6FE200569C2B /* BaseViewController.swift */; };
+		D48C3C4E1FBB5C4800D6F4A9 /* AnalyticsTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48C3C4D1FBB5C4800D6F4A9 /* AnalyticsTracker.swift */; };
 		D4DDEDE51FBA85000021B361 /* Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DDEDE41FBA85000021B361 /* Alertable.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		D435DF911FBA6A7000569C2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D435DF931FBA6A7000569C2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D435DF991FBA6FE200569C2B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D48C3C4D1FBB5C4800D6F4A9 /* AnalyticsTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsTracker.swift; sourceTree = "<group>"; };
 		D4DDEDE41FBA85000021B361 /* Alertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				D4DDEDE41FBA85000021B361 /* Alertable.swift */,
+				D48C3C4D1FBB5C4800D6F4A9 /* AnalyticsTracker.swift */,
 				D435DF871FBA6A7000569C2B /* AppDelegate.swift */,
 				D435DF991FBA6FE200569C2B /* BaseViewController.swift */,
 				D435DF891FBA6A7000569C2B /* ViewController.swift */,
@@ -145,6 +148,7 @@
 				D435DF8A1FBA6A7000569C2B /* ViewController.swift in Sources */,
 				D435DF881FBA6A7000569C2B /* AppDelegate.swift in Sources */,
 				D4DDEDE51FBA85000021B361 /* Alertable.swift in Sources */,
+				D48C3C4E1FBB5C4800D6F4A9 /* AnalyticsTracker.swift in Sources */,
 				D435DF9A1FBA6FE200569C2B /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
