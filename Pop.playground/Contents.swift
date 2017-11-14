@@ -44,6 +44,7 @@ import UIKit
 //}
 //
 // TODO: create an instance of Insect
+// TODO: create method with Insect as method parameter
 
 
 ////////////////////////////////////////////////////////////////////////////////
