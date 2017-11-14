@@ -12,6 +12,7 @@ class ViewController: BaseViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var scrollViewBottomConstraint: NSLayoutConstraint!
 
     lazy var tapGestureRecognizer: UITapGestureRecognizer = {
         let tapper = UITapGestureRecognizer()
@@ -19,18 +20,24 @@ class ViewController: BaseViewController {
         return tapper
     }()
 
+    // TODO: uncomment
+//    override var constraintToAdjustForKeyboard: NSLayoutConstraint? {
+//        return scrollViewBottomConstraint
+//    }
+
     @IBAction func sayIt(_ sender: UIButton) {
         guard let text = textField.text, text.count > 0 else { return }
+        view.endEditing(true)
         showOkAlert(title: "You said", message: text, completion: nil)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         scrollView.addGestureRecognizer(tapGestureRecognizer)
         textField.delegate = self
     }
-    
+
     @objc func viewTapped(sender: UITapGestureRecognizer) {
         view.endEditing(true)
     }

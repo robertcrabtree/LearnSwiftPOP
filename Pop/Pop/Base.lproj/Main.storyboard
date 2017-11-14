@@ -52,7 +52,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.31639695592741024" green="0.57670822538860111" blue="0.28171917801119178" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.15981416779999999" green="0.031362596489999998" blue="0.5767082254" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="2hl-gR-MvX" firstAttribute="leading" secondItem="rHV-Tv-fre" secondAttribute="leading" id="8Rl-T3-vuP"/>
                                     <constraint firstAttribute="bottom" secondItem="2hl-gR-MvX" secondAttribute="bottom" id="HLV-vz-uTB"/>
@@ -61,7 +61,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.57670822538860111" green="0.069222377241405356" blue="0.098752884676526931" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.15981416779999999" green="0.031362596489999998" blue="0.5767082254" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="rHV-Tv-fre" secondAttribute="trailing" id="9ZY-bz-U7Z"/>
                             <constraint firstAttribute="bottom" secondItem="rHV-Tv-fre" secondAttribute="bottom" id="KcT-T7-ZKf"/>
@@ -74,6 +74,7 @@
                     </view>
                     <connections>
                         <outlet property="scrollView" destination="rHV-Tv-fre" id="Eya-jX-Fww"/>
+                        <outlet property="scrollViewBottomConstraint" destination="KcT-T7-ZKf" id="WQj-zw-K39"/>
                         <outlet property="textField" destination="4IU-WZ-EUa" id="vG1-DU-cny"/>
                     </connections>
                 </viewController>
