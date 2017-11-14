@@ -10,8 +10,10 @@ import UIKit
 
 class PlainViewController: BaseViewController {
     var showAlert: Bool = true
-    
+
     override func viewDidAppear(_ animated: Bool) {
+
+        // Inherits analytics functionality from base class
         super.viewDidAppear(animated)
         if showAlert {
             // Using base class ok alert

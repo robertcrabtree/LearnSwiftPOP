@@ -21,6 +21,7 @@ class ScrollingViewController: BaseViewController {
     }()
 
     // TODO: uncomment
+    // Implements constraint property declared in base class
 //    override var constraintToAdjustForKeyboard: NSLayoutConstraint? {
 //        return scrollViewBottomConstraint
 //    }
