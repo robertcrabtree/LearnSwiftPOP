@@ -22,6 +22,7 @@ class BaseViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
+        // print the name of the view controller that appears
         print(String(describing: type(of: self)) + " appeared")
 
         // Register for keyboard show and hide notifications
