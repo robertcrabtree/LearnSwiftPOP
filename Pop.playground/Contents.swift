@@ -59,8 +59,8 @@ import UIKit
 //class Beetle: Insect {
 //}
 //
+// TODO: make beetle walk
 // TODO: override walk
-// TODO: pass insect to function
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -164,7 +164,7 @@ import UIKit
 //struct Beetle: Walker {
 //}
 //
-//struct Grasshopper: Jumper, Flyer {
+//struct Grasshopper: Jumper {
 //}
 //
 //struct Butterfly: Flyer {
