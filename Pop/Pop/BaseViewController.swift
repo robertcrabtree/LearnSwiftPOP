@@ -10,6 +10,7 @@ import UIKit
 
 class BaseViewController: UIViewController {
 
+    // The constraint to adjust for keyboard show and hide
     var constraintToAdjustForKeyboard: NSLayoutConstraint? { // subclasses should override
         return nil
     }
@@ -20,9 +21,6 @@ class BaseViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
-        // Track view controller usage with analytics tracker
-        AnalyticsTracker.shared.track(String(describing: type(of: self)), message: "Appeared")
 
         // Register for keyboard show and hide notifications
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardMoved(_:)), name: .UIKeyboardWillShow, object: nil)
