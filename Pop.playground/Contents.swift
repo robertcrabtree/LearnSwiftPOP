@@ -91,7 +91,6 @@ import UIKit
 // TODO: make beetle conform to insect protocol
 // TODO: implement protocol extension
 // TODO: override walk
-// TODO: pass insect to function
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -174,7 +173,6 @@ import UIKit
 // TODO: implement protocol extensions
 // TODO: make grasshopper jump and fly
 // TODO: introduce multiped protocol and decorate types with multiped
-// TODO: implement worm type
 // TODO: non-insects
 
 ////////////////////////////////////////////////////////////////////////////////
