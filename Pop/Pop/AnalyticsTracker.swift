@@ -25,7 +25,7 @@ extension Trackable {
 }
 
 // Concrete type conforming to Trackable
-struct PrintingAnalyticsTracker: Trackable { }
+fileprivate struct PrintingAnalyticsTracker: Trackable { }
 
 // Analytics tracker singleton / factory
 struct AnalyticsTracker {
