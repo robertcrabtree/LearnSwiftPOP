@@ -22,6 +22,8 @@ class BaseViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
+        print(String(describing: type(of: self)) + " appeared")
+
         // Register for keyboard show and hide notifications
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardMoved(_:)), name: .UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardMoved(_:)), name: .UIKeyboardWillHide, object: nil)
