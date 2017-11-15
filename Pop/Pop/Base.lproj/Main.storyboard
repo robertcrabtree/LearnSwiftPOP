@@ -57,7 +57,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJj-cU-TkG">
-                                                <rect key="frame" x="20" y="532" width="335" height="51"/>
+                                                <rect key="frame" x="20" y="516" width="335" height="51"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                                 <state key="normal" title="Say It">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -67,7 +67,7 @@
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Something to say..." textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="4IU-WZ-EUa">
-                                                <rect key="frame" x="20" y="456" width="335" height="43"/>
+                                                <rect key="frame" x="20" y="440" width="335" height="43"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
@@ -79,6 +79,7 @@
                                             <constraint firstAttribute="trailing" secondItem="nJj-cU-TkG" secondAttribute="trailing" constant="20" id="AWw-er-Ydk"/>
                                             <constraint firstItem="nJj-cU-TkG" firstAttribute="top" secondItem="4IU-WZ-EUa" secondAttribute="bottom" constant="33" id="Ieo-sF-Ihz"/>
                                             <constraint firstItem="4IU-WZ-EUa" firstAttribute="leading" secondItem="2hl-gR-MvX" secondAttribute="leading" constant="20" id="aEY-sH-Egq"/>
+                                            <constraint firstAttribute="bottom" secondItem="nJj-cU-TkG" secondAttribute="bottom" constant="100" id="pt2-vy-Eha"/>
                                             <constraint firstItem="nJj-cU-TkG" firstAttribute="leading" secondItem="2hl-gR-MvX" secondAttribute="leading" constant="20" id="uEs-gk-vgE"/>
                                         </constraints>
                                     </view>
@@ -96,7 +97,6 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="rHV-Tv-fre" secondAttribute="trailing" id="9ZY-bz-U7Z"/>
                             <constraint firstAttribute="bottom" secondItem="rHV-Tv-fre" secondAttribute="bottom" id="KcT-T7-ZKf"/>
-                            <constraint firstItem="nJj-cU-TkG" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-20" id="Rj5-Qp-0Sj"/>
                             <constraint firstItem="2hl-gR-MvX" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="eN0-G8-JJP"/>
                             <constraint firstItem="2hl-gR-MvX" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="ilh-hN-LUU"/>
                             <constraint firstItem="rHV-Tv-fre" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lAm-2E-UxN"/>
@@ -117,7 +117,6 @@
         <!--Navigation Controller-->
         <scene sceneID="ghy-Mz-is0">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1x5-el-vFk" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ljg-dB-MeJ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9ev-1S-ht1">
@@ -130,6 +129,7 @@
                         <segue destination="piD-VX-wHh" kind="relationship" relationship="rootViewController" id="38o-8J-IeE"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1x5-el-vFk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-753" y="33"/>
         </scene>
